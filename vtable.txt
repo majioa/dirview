@@ -1,0 +1,7 @@
+VTBL	DW	0	;‘Œ…™…ˆ… ‚ˆ„…Ž€ŒŸ’ˆ
+	DW	0B800H  ;‘…ƒŒ…’ ‚ˆ„…Ž€ŒŸ’ˆ
+	DW	25	;YMAX
+	DW	80	;XMAX
+	DB	0	;ŠŽ‹-‚Ž ˆ’Ž‚ –‚…’€
+	DB	0
+	DW	0,0,0

@@ -1,0 +1,23 @@
+WRITE_WORD      EQU     WW
+WW      PROC
+        PUSH    AX
+WW_1:
+        LODSB
+        OR      AL,AL
+        JE      WW_EXIT
+        CALL    WS
+        JMP     SHORT WW_1
+WW_EXIT:
+        POP     AX
+        RET
+ENDP
+WS      PROC
+        PUSH    AX
+        PUSH    DX
+        MOV     AH,6
+        MOV     DL,AL
+        INT     21H
+        POP     DX
+        POP     AX
+        RET
+ENDP
